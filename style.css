@@ -88,4 +88,38 @@ ul li::before {
     color: #3498db;
     font-weight: bold;
 }
+/* RESPONSIVE - Mobile first */
+
+/* Tablettes et petits écrans */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+        font-size: 16px;
+    }
+    
+    header, main, footer {
+        padding: 20px 15px;
+    }
+    
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.5em; }
+    
+    img { width: 100%; height: auto; }
+    
+    ul { padding: 15px; }
+}
+
+/* Très petits écrans (smartphones) */
+@media (max-width: 480px) {
+    body { 
+        margin: 5px; 
+        line-height: 1.5;
+    }
+    
+    header h1 { font-size: 1.8em; }
+    h2 { font-size: 1.3em; }
+    
+    p { font-size: 16px; line-height: 1.6; }
+}
+
 
