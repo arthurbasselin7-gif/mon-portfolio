@@ -5,6 +5,7 @@
   <title>Portfolio - Arthur</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <canvas id="particles-canvas" style="position:fixed;top:0;left:0;z-index:-1;"></canvas>
 </head>
 <body>
   <header>
@@ -16,20 +17,18 @@
     <section>
       <h2>À propos</h2>
       <p>Je suis <strong>Arthur</strong>, étudiant ingénieur généraliste.</p>
-      <p>Passionné par la tech, la mécanique, Arduino et l'innovation industrielle.</p>
+      <p>Passionné par la tech, la mécanique, les systèmes embarquées et l'innovation industrielle.</p>
       <p>Je crée ce portfolio pour présenter mes projets et compétences.</p>
     </section>
 
     <section>
       <h2>Mes compétences</h2>
       <ul>
-        <li>HTML & CSS (en cours)</li>
+        <li>HTML & CSS & JS(en cours)</li>
         <li>Arduino & programmation embarquée</li>
         <li>Calculs génie civil / mécanique</li>
         <li>Gestion de projets</li>
         <li>Python</li>
-        <li>JavaScript (à venir)</li>
-        
       </ul>
     </section>
 
@@ -42,19 +41,37 @@
         <li>Portfolio responsive</li>
       </ul>
     </section>
-
     <section>
       <h2>Contact</h2>
       <p><strong>Email :</strong> <a href="mailto:arthurbasselin7@gmail.com">arthurbasselin7@gmail.com</a></p>
       <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/arthur-basselin" target="_blank">Mon profil</a></p>
       <p><strong>GitHub :</strong> <a href="https://github.com/arthurbasselin7-gif" target="_blank">Mes projets</a></p>
+      <section id="contact">
+    <h2>Contact</h2>
+    <p>Envoyez-moi un message directement !</p>
+    <form action="https://formspree.io/f/xvzbgbgr" method="POST">
+        <input type="text" name="nom" placeholder="Votre nom" required maxlength="50">
+        <input type="email" name="email" placeholder="votre@email.com" required>
+        <textarea name="message" placeholder="Votre message..." rows="6" required maxlength="500"></textarea>
+        <input type="_subject" value="Nouveau message Portfolio Arthur" style="display:none;">
+        <button type="submit">Envoyer le message</button>
+    </form>
+</section>
+<div style="text-align:center; margin:40px 0;">
+    <a href="https://github.com/arthurbasselin7-gif/mon-portfolio/raw/main/cv-arthur.pdf" 
+       download="CV_Arthur_2026.pdf" 
+       class="download-cv">
+        📄 Télécharger mon CV
+    </a>
+</div>
+
     </section>
 <section>
     <img src="https://picsum.photos/400/250?random=42" alt="Photo de profil Arthur" style="display:block; margin:20px auto; max-width:100%;">
 </section>
 <div style="text-align:center; margin:20px 0;">
     <button id="dark-mode-btn" style="padding:15px 30px; font-size:18px; background:#3498db; color:white; border:none; border-radius:25px; cursor:pointer;">
-        🌙 Mode Sombre
+        Mode Sombre
     </button>
 </div>
 </main>
